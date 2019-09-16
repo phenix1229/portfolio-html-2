@@ -1,24 +1,42 @@
 body {
     background-color: rgb(26, 48, 78);
+    z-index: 1;
 }
 
-div.main-field {
+section.main-field {
     position: absolute;
-    top: 10vmax;
-    right: 10vmax;
-    bottom: 10vmax;
-    left: 15vmax;
+    top: 20px;
+    left: 180px;
     width: 75vmax;
-    padding: 20px;
     background-color:whitesmoke;
-    border: 2px;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 div.nav {
-    float: left;
-    width: 10vmax;
-    padding: 10px;
+    box-sizing: border-box;
+    width: 130px;
+    padding: 20px;
     position: fixed;
+    top: 20px;
+    left: 30;
     background-color: whitesmoke;
+    z-index: 3;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p.img {
+    text-align: center;
+    padding: 15px;
+}
+
+p {
+    padding: 20px;
 }
