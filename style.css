@@ -9,7 +9,7 @@ div.main-field {
     left: 180px;
     width: 75vmax;
     background-color:whitesmoke;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     z-index: 2;
 }
 
