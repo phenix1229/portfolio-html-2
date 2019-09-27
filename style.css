@@ -3,13 +3,13 @@ body {
     z-index: 1;
 }
 
-section.main-field {
-    position: absolute;
+div.main-field {
+    position: fixed;
     top: 20px;
     left: 180px;
     width: 75vmax;
     background-color:whitesmoke;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     z-index: 2;
 }
 
@@ -24,11 +24,7 @@ div.nav {
     z-index: 3;
 }
 
-h1 {
-    text-align: center;
-}
-
-h2 {
+h1, h2 {
     text-align: center;
 }
 
