@@ -4,7 +4,7 @@ body {
 }
 
 div.main-field {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 180px;
     width: 75vmax;
