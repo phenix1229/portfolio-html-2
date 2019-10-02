@@ -5,7 +5,7 @@
 
 body {
     background-color: rgb(26, 48, 78);
-    z-index: 1;
+    /* z-index: 1; */
 }
 div.body {
     display: grid;
@@ -13,12 +13,14 @@ div.body {
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "nav main-field"
-    ". main"
+    ". main-field";
 }
 
 div.main-field {
     grid-area: main-field;
     margin: 15px 15px auto 0px;
+    padding: 25px;
+    text-align: left;
     /* grid-column: 2 / 3; */
     /* position: ; */
     /* top: 20px;
@@ -32,7 +34,9 @@ div.main-field {
 div.nav {
     grid-column: 1 / 2;
     margin: 15px 15px auto 15px;
-    padding: 15px;   
+    /* padding: 15px; */
+    text-align: center;
+
     /* box-sizing: border-box; */
     /* width: 130px; */
     /* padding: 20px; */
@@ -51,7 +55,6 @@ p.img {
     text-align: center;
     padding: 15px;
 }
-
-p {
+ul {
     padding: 20px;
 }
