@@ -5,7 +5,6 @@
 
 body {
     background-color: rgb(26, 48, 78);
-    /* z-index: 1; */
 }
 div.body {
     display: grid;
@@ -21,30 +20,14 @@ div.main-field {
     margin: 15px 15px auto 0px;
     padding: 25px;
     text-align: left;
-    /* grid-column: 2 / 3; */
-    /* position: ; */
-    /* top: 20px;
-    left: 180px;
-    width: 75vmax; */
     background-color:whitesmoke;
-    /* box-sizing: border-box; */
-    /* z-index: 2; */
 }
 
 div.nav {
     grid-column: 1 / 2;
     margin: 15px 15px auto 15px;
-    /* padding: 15px; */
-    text-align: center;
-
-    /* box-sizing: border-box; */
-    /* width: 130px; */
-    /* padding: 20px; */
-    /* position: fixed; */
-    /* top: 20px; */
-    /* left: 30; */
+    padding: 15px;
     background-color: whitesmoke;
-    /* z-index: 3; */
 }
 
 h1, h2 {
@@ -56,5 +39,5 @@ p.img {
     padding: 15px;
 }
 ul {
-    padding: 20px;
+    padding: 30px;
 }
