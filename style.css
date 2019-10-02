@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(26, 48, 78);
+    line-height: 1.3em;
 }
 div.body {
     display: grid;
@@ -28,6 +29,11 @@ div.nav {
     margin: 15px 15px auto 15px;
     padding: 15px;
     background-color: whitesmoke;
+    line-height: 1.5em;
+}
+
+div.img {
+    margin: 15px 50vmax 15px 75%; 
 }
 
 h1, h2 {
