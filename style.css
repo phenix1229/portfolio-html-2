@@ -13,7 +13,7 @@ div.body {
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "nav main-field ."
-    ". main-field .";
+    "nav main-field .";
 }
 
 div.main-field {
@@ -25,10 +25,18 @@ div.main-field {
 }
 
 div.nav {
-    grid-column: 1 / 2;
-    margin: 15px 15px auto 15px;
+    /* grid-column: 1 / 2; */
+    grid-area: nav;
+    position: fixed;
+    width: 100px;
+    margin: 15px 10px auto 10px;
     padding: 15px;
+    line-height: 1.6em;
     background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+    color: rgb(49, 81, 129)
 }
 
 h1, h2 {
