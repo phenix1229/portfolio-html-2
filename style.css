@@ -50,3 +50,7 @@ p.img {
 ul {
     padding: 5px 30px;
 }
+
+img:active {
+    height: 500px;
+}
