@@ -7,7 +7,7 @@
 
 // 
 
-document.querySelectorAll('.img > img').forEach(function (thing){
+document.querySelectorAll('.img').forEach(function (thing){
     thing = document.querySelector('.img');
     const picInfo = document.querySelector('.img').innerHTML;
     const pic = document.querySelector('.img > img');
