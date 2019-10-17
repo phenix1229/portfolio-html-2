@@ -7,28 +7,15 @@
 
 // 
 
-document.querySelectorAll('.img1').forEach(function (space){
-    const 
-    const picInfo = document.querySelector('.img1').innerHTML
-    const pic = document.querySelector('.img1 > img')
+document.querySelectorAll('.img > img').forEach(function (thing){
+    thing = document.querySelector('.img');
+    const picInfo = document.querySelector('.img').innerHTML;
+    const pic = document.querySelector('.img > img');
     const iLink = document.createElement('a');
     iLink.target = '_blank';
     iLink.href = pic.src; 
     iLink.innerHTML = picInfo;
-    ;
+    thing.removeChild(thing.querySelector('img'));
     
-    return space.appendChild(iLink);
+    thing.appendChild(iLink);
 })
-
-// function testLink(){
-//     const testLink = document.createElement('a')
-//     testLink.href = "#";
-//     testLink.innerText = "test link";
-//     testLink.id = "test";
-//     return document.body.appendChild(testLink);
-// }
-
-// testLink()
-// document.body.appendChild('#test')
-
-// addLinkToThumb('.thumbnail');
