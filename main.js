@@ -15,7 +15,7 @@ document.querySelectorAll('.img').forEach(function (thing){
     iLink.target = '_blank';
     iLink.href = pic.src; 
     iLink.innerHTML = picInfo;
-    thing.removeChild(thing.querySelector('img'));
+    thing.replaceChild(iLink, pic);
     
     thing.appendChild(iLink);
 })
