@@ -7,7 +7,7 @@
 
 // 
 
-document.querySelectorAll('.img').forEach(function (thing){
+document.querySelectorAll('.img > img').forEach(function (){
     thing = document.querySelector('.img');
     const picInfo = document.querySelector('.img').innerHTML;
     const pic = document.querySelector('.img > img');
@@ -15,7 +15,8 @@ document.querySelectorAll('.img').forEach(function (thing){
     iLink.target = '_blank';
     iLink.href = pic.src; 
     iLink.innerHTML = picInfo;
-    thing.replaceChild(iLink, pic);
+    thing.removeChild(pic);
+    // thing.replaceChild(iLink, pic);
     
     thing.appendChild(iLink);
 })
