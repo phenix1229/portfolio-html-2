@@ -19,9 +19,7 @@ document.querySelectorAll('.img > img').forEach(function (){
     iLink.href = pic.src; 
     // picThumb.src = picInfo
     iLink.innerHTML = pic.outerHTML
-    // iLink.innerHTML = picInfo;
-    thing.removeChild(pic);
-    // thing.replaceChild(iLink, pic);
-    console.log(iLink)
-    thing.appendChild(iLink);
+    // thing.removeChild(pic);
+    thing.replaceChild(iLink, pic);
+    // thing.appendChild(iLink);
 })
