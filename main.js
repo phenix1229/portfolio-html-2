@@ -8,15 +8,20 @@
 // 
 
 document.querySelectorAll('.img > img').forEach(function (){
-    thing = document.querySelector('.img');
-    const picInfo = document.querySelector('.img').innerHTML;
+    const thing = document.querySelector('.img');
+    // console.log(thing)
+    // const picInfo = document.querySelector('.img').innerHTML;
+    // console.log(picInfo);
     const pic = document.querySelector('.img > img');
     const iLink = document.createElement('a');
+    // const picThumb = document.createElement('img')
     iLink.target = '_blank';
     iLink.href = pic.src; 
-    iLink.innerHTML = picInfo;
+    // picThumb.src = picInfo
+    iLink.innerHTML = pic.outerHTML
+    // iLink.innerHTML = picInfo;
     thing.removeChild(pic);
     // thing.replaceChild(iLink, pic);
-    
+    console.log(iLink)
     thing.appendChild(iLink);
 })
