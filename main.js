@@ -7,12 +7,12 @@
 
 // 
 
-document.querySelectorAll('.img > img').forEach(function (){
+document.querySelectorAll('.img > img').forEach(function (pic){
     const thing = document.querySelector('.img');
     // console.log(thing)
     // const picInfo = document.querySelector('.img').innerHTML;
     // console.log(picInfo);
-    const pic = document.querySelector('.img > img');
+    // const pic = document.querySelector('.img > img');
     const iLink = document.createElement('a');
     // const picThumb = document.createElement('img')
     iLink.target = '_blank';
