@@ -82,6 +82,18 @@ function birthStone(birthDate) {
   return reply; 
 }
 
+function yourInfo(optionNum){
+  if (optionNum === "1"){
+    return age(birthDate);
+  } else if (optionNum === "2"){
+    return zodiacSign(birthDate);
+  } else if (optionNum === "3"){
+    return birthStone(birthDate);
+  } else if(optionNum === '4'){
+    return age(birthDate), zodiacSign(birthDate), birthStone(birthDate);
+  } else {
+    return "Goodbye"}
+}
 
 const readline =
 require('readline').createInterface({
@@ -94,15 +106,23 @@ readline.question("What is your birth date (mmddyyyy)?\n",
     readline.setPrompt("What would you like to know?\n1 = Age\n2 = Zodiac sign\n3 = Birthstone\n4 = All of the above\nPress any other key and 'Enter' to exit\n");
     readline.prompt();
     readline.on('line', (userInput) => {
-      if (userInput.trim() == "1"){
+      if (optionNum === "1"){
         console.log(age(birthDate));
-      } else if (userInput.trim() == "2"){
+      } else if (optionNum === "2"){
         console.log(zodiacSign(birthDate));
-      } else if (userInput.trim() == "3"){
+      } else if (optionNum === "3"){
         console.log(birthStone(birthDate));
-      } else if(userInput.trim() == '4'){
+      } else if(optionNum === '4'){
         console.log(age(birthDate), zodiacSign(birthDate), birthStone(birthDate));
       } else {
         console.log("Goodbye")}
       readline.close()})
   })
+
+module.exports = {
+  separateDate,
+  age,
+  zodiacSign,
+  birthStone,
+  yourInfo
+}
