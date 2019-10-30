@@ -24,6 +24,8 @@ function zodiacSign(birthDate) {
   sign = 'Your Zodiac sign is ';
   
   if (birthMonth === 3 && birthDay >= 21 || birthMonth === 4 && birthDay <= 20) {
+    // document.createElement('img',src='./photos/aries.pmg', id='test');
+    // document.querySelector('#result').appendChild('#test');
     return sign + 'Aries.';
   } else if (birthMonth === 4 && birthDay >= 21 || birthMonth === 5 && birthDay <= 20) {
     return sign + 'Taurus.';
@@ -49,6 +51,13 @@ function zodiacSign(birthDate) {
     return sign + 'Pisces.';
   }
 }
+
+// function addStonePic(stone){
+//       const stonePic = document.createElement('img');
+//       stonePic.className = 'sPic';
+//       stonePic.src = `./photos/${stone}.png`;
+//       document.querySelector('body').appendChild(stonePic);
+// }
 
 function birthStone(birthDate) {
   separateDate(birthDate);
@@ -78,6 +87,7 @@ function birthStone(birthDate) {
     } else {
         stone = 'Blue Topaz.';
     }
+
   reply = 'Your birthstone is ' + stone;
   return reply; 
 }
@@ -90,10 +100,11 @@ function yourInfo(optionNum){
   } else if (optionNum === "3"){
     return birthStone(birthDate);
   } else if(optionNum === '4'){
-    return `${age(birthDate)}\n${zodiacSign(birthDate)}\n ${birthStone(birthDate)}`;
+    return `${age(birthDate)}\n ${zodiacSign(birthDate)}\n ${birthStone(birthDate)}`;
   } else {
     return "Goodbye"}
 }
+
 
 module.exports = {
   separateDate,
