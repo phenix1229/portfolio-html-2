@@ -63,29 +63,29 @@ function birthStone(birthDate) {
   separateDate(birthDate);
   
   if (birthMonth === 1) {
-        stone = 'Garnet.';
+        stone = 'Garnet';
     } else if (birthMonth === 2) {
-        stone = 'Amethyst.';
+        stone = 'Amethyst';
     } else if (birthMonth === 3) {
-        stone = 'Aquamarine.';
+        stone = 'Aquamarine';
     } else if (birthMonth === 4) {
-        stone = 'Diamond.';
+        stone = 'Diamond';
     } else if (birthMonth === 5) {
         stone = 'Emerald.';
     } else if (birthMonth === 6) {
-        stone = 'Alexandrite.';
+        stone = 'Alexandrite';
     } else if (birthMonth === 7) {
-        stone = 'Ruby.';
+        stone = 'Ruby';
     } else if (birthMonth === 8) {
-        stone = 'Peridot.';
+        stone = 'Peridot';
     } else if (birthMonth === 9) {
-        stone = 'Sapphire.';
+        stone = 'Sapphire';
     } else if (birthMonth === 10) {
         stone = 'Pink Tourmaline.';
     } else if (birthMonth === 11) {
-        stone = 'Citrine.';
+        stone = 'Citrine';
     } else {
-        stone = 'Blue Topaz.';
+        stone = 'Blue Topaz';
     }
 
   reply = 'Your birthstone is ' + stone;

@@ -72,4 +72,8 @@ ul {
 
 .sPic {
     height: 100px;
+    display: inherit;
+    position: relative;
+    left: 50%;
+    /* margin-left: 22vmax; */
 }
