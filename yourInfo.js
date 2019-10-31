@@ -54,7 +54,7 @@ function addStonePic(stone){
   const stonePic = document.createElement('img');
   stonePic.className = 'sPic';
   stonePic.src = `./photos/${stone.toLowerCase()}png`;
-  document.querySelector('#result-image').appendChild(stonePic);
+  document.querySelector('#result-image > .img').appendChild(stonePic);
 }
 
 function birthStone(birthDate) {
@@ -83,7 +83,7 @@ function addSignPic(){
   const signPic = document.createElement('img');
   signPic.className = 'sPic';
   signPic.src = `./photos/${sign.toLowerCase()}png`;
-  document.querySelector('#result-image').appendChild(signPic);
+  document.querySelector('#result-image > .img').appendChild(signPic);
 }
 
 

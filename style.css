@@ -63,7 +63,7 @@ ul {
 }
 
 #result {
-    margin: 50px 150px;
+    margin: 50px 150px 20px 150px;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
@@ -72,10 +72,6 @@ ul {
 
 .sPic {
     height: 100px;
-    /* display: inherit;
-    position: relative;
-    left: 50%; */
-    /* margin-left: 22vmax; */
 }
 
 #result-image {
