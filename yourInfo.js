@@ -59,7 +59,7 @@ function addStonePic(stone){
 
 function birthStone(birthDate) {
   separateDate(birthDate);
-  const stones = ['Garnet.', 'Amethyst.', 'Aquamarine.', 'Diamond', 'Emerald.', 'Alexandrite.', 'Ruby.', 'Peridot.', 'Sapphire.', 'Pink-Tourmaline.', 'Citrine.', 'Blue-Topaz.']
+  const stones = ['Garnet.', 'Amethyst.', 'Aquamarine.', 'Diamond.', 'Emerald.', 'Alexandrite.', 'Ruby.', 'Peridot.', 'Sapphire.', 'Pink-Tourmaline.', 'Citrine.', 'Blue-Topaz.']
   const stone = stones[birthMonth - 1]; 
   addStonePic(stone)
   return `Your birthstone is ${stone}`
