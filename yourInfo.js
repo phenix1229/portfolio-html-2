@@ -66,17 +66,19 @@ function birthStone(birthDate) {
 }
 
 function yourInfo(optionNum){
-  if (optionNum === "1"){
-    return age(birthDate);
-  } else if (optionNum === "2"){
-    return zodiacSign(birthDate);
-  } else if (optionNum === "3"){
-    return birthStone(birthDate);
-  } else if(optionNum === '4'){
-    return `${age(birthDate)}\n ${zodiacSign(birthDate)}\n ${birthStone(birthDate)}`;
+  let reply = [];
+  if (optionNum.includes('1') && !optionNum.includes('4')){
+    reply.push(age(birthDate));
+  } else if (optionNum.includes('2') && !optionNum.includes('4')){
+    reply.push(zodiacSign(birthDate));
+  } else if (optionNum.includes('1') && !optionNum.includes('4')){
+    reply.push(birthStone(birthDate)) ;
+  } else if(optionNum.includes('4')){
+    reply.push(`${age(birthDate)}\n ${zodiacSign(birthDate)}\n ${birthStone(birthDate)}`);
   } else {
     return "Goodbye";
   }
+  return reply.join(' ');
 }
 
 function addSignPic(){
