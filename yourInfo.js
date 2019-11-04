@@ -67,17 +67,20 @@ function birthStone(birthDate) {
 
 function yourInfo(optionNum){
   let reply = [];
-  if (optionNum.includes('1') && !optionNum.includes('4')){
+  for (const num of optionNum){
+  if (num.includes('1') && !num.includes('4')){
     reply.push(age(birthDate));
-  } else if (optionNum.includes('2') && !optionNum.includes('4')){
+  } else if (num.includes('2') && !num.includes('4')){
     reply.push(zodiacSign(birthDate));
-  } else if (optionNum.includes('1') && !optionNum.includes('4')){
+  } else if (num.includes('3') && !num.includes('4')){
     reply.push(birthStone(birthDate)) ;
-  } else if(optionNum.includes('4')){
+  } else if(num.includes('4')){
     reply.push(`${age(birthDate)}\n ${zodiacSign(birthDate)}\n ${birthStone(birthDate)}`);
-  } else {
+  } 
+  else {
     return "Goodbye";
   }
+}
   return reply.join(' ');
 }
 
